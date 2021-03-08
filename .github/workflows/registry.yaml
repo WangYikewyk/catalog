@@ -16,7 +16,7 @@ env:
 
 
 jobs:
-  publish-images:
+  publish-route-images:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
