@@ -96,7 +96,7 @@ jobs:
             GITVERSION=git-${{ steps.vars.outputs.git_revision }}
             VERSION=${{ steps.get_version.outputs.VERSION }}
           tags: |-
-            ghcr.io/${{ github.repository }}/routetrait:${{ steps.get_version.outputs.VERSION }}
+            ghcr.io/${{ github.repository }}/podspecworkload:${{ steps.get_version.outputs.VERSION }}
 
   publish-autoscaler-images:
     runs-on: ubuntu-latest
@@ -137,7 +137,7 @@ jobs:
             GITVERSION=git-${{ steps.vars.outputs.git_revision }}
             VERSION=${{ steps.get_version.outputs.VERSION }}
           tags: |-
-            ghcr.io/${{ github.repository }}/routetrait:${{ steps.get_version.outputs.VERSION }}
+            ghcr.io/${{ github.repository }}/autoscalertrait:${{ steps.get_version.outputs.VERSION }}
 
   publish-metrics-images:
     runs-on: ubuntu-latest
@@ -178,4 +178,4 @@ jobs:
             GITVERSION=git-${{ steps.vars.outputs.git_revision }}
             VERSION=${{ steps.get_version.outputs.VERSION }}
           tags: |-
-            ghcr.io/${{ github.repository }}/routetrait:${{ steps.get_version.outputs.VERSION }}
+            ghcr.io/${{ github.repository }}/metricstrait:${{ steps.get_version.outputs.VERSION }}
